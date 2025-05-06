@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .btn {
+    margin: 8px;
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .controls {
+    margin-top: 25px;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 15px;
+  }
+  
+  .btn-container .btn {
+    flex: 1;
+  }
+  
+  .correct {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  #timer-container, #progress-container {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  #final-score {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the question submission form */
+  #question-form-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  #question-form div {
+    margin-bottom: 15px;
+  }
+  
+  #question-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #question-form label {
+    display: block;
+    font-size: 14px;
+  }
+  
+  #question-form input[type="radio"] {
+    margin-left: 10px;
+  }
+  
+  @media (min-width: 600px) {
+    .btn-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .btn-container .btn {
+      margin: 8px;
+      width: 45%;
+    }
+  }
+  /* Existing styles */
+
+/* Style for the "Request to Submit" button */
+#request-submit-container {
+    margin-top: 20px;
+  }
+  
+  /* Hide the form initially */
+  .hide {
+    display: none;
+  }
+  
+  /* Style for the question submission form */
+  #question-form-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  #question-form div {
+    margin-bottom: 15px;
+  }
+  
+  #question-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #question-form label {
+    display: block;
+    font-size: 14px;
+  }
+  
+  #question-form input[type="radio"] {
+    margin-left: 10px;
+  }

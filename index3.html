@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <div class="container">
+    <div id="quiz">
+      <!-- Timer Display -->
+      <div id="timer-container" class="hide">
+        Time Left: <span id="timer">10</span>s
+      </div>
+      
+      <!-- Progress Display -->
+      <div id="progress-container" class="hide">
+        Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+      </div>
+      
+      <!-- Question and Answers -->
+      <div id="question-container" class="hide">
+        <div id="question">Question text</div>
+        <div id="answer-buttons" class="btn-container">
+          <!-- Answer buttons will be dynamically added here -->
+        </div>
+      </div>
+      
+      <!-- Controls -->
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
+      
+      <!-- Score Display -->
+      <div id="score-container" class="hide">
+        <div id="final-score">Your score: <span id="score">0</span></div>
+        <button id="restart-btn" class="restart-btn btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <!-- Request to Submit Questions Button -->
+    <div id="request-submit-container">
+      <button id="request-submit-btn" class="btn">Request to Submit a Question</button>
+    </div>
+
+    <!-- User-generated question submission form (initially hidden) -->
+    <div id="question-form-container" class="hide">
+      <h3>Submit Your Own Question</h3>
+      <form id="question-form">
+        <div>
+          <label for="user-question">Question</label>
+          <input type="text" id="user-question" name="user-question" required />
+        </div>
+        <div>
+          <label for="user-answer1">Answer 1</label>
+          <input type="text" id="user-answer1" name="user-answer1" required />
+          <input type="radio" name="correct-answer" value="1" required /> Correct
+        </div>
+        <div>
+          <label for="user-answer2">Answer 2</label>
+          <input type="text" id="user-answer2" name="user-answer2" required />
+          <input type="radio" name="correct-answer" value="2" /> Correct
+        </div>
+        <div>
+          <label for="user-answer3">Answer 3</label>
+          <input type="text" id="user-answer3" name="user-answer3" required />
+          <input type="radio" name="correct-answer" value="3" /> Correct
+        </div>
+        <div>
+          <label for="user-answer4">Answer 4</label>
+          <input type="text" id="user-answer4" name="user-answer4" required />
+          <input type="radio" name="correct-answer" value="4" /> Correct
+        </div>
+        <button type="submit" class="btn">Submit Question</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="script3.js"></script>
+</body>
+</html>
