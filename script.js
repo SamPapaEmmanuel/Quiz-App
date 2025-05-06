@@ -220,7 +220,8 @@ function showScore() {
   timerContainer.classList.add('hide');
   progressContainer.classList.add('hide');
   scoreContainer.classList.remove('hide');
-  finalScoreElement.innerText = '${score} / ${shuffledQuestions.length}';
+  finalScoreElement.innerText = '${score} / ${shuffledQuestions.length} correct';
+  finalScoreElement.innerText = `${score} / ${shuffledQuestions.length} correct`;
 }
 
 // Function to Reset the Quiz
